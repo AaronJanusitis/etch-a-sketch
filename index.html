@@ -7,7 +7,24 @@
   <title>Page Title</title>
 </head>
 <body>
-
+  <div class="header">Aaron's Fantastic Etch-A-Sketch</div>
+  <div class="sketch-area"></div>
+  <div class="sketch-settings">
+    <div class="settings-title">Etch-A-Sketch Settings</div>
+    <div class="grid-size-container">
+      <div>Grid Size: </div>
+      <input type="number" id="grid_size_input" value="16">
+      <button id="grid_size_button">Apply</button>
+    </div>
+    <div class="pen-type-container">
+      <div>Pen Colour: </div>
+      <input type="radio" id="black_pen" name="pen_type" value="Black">
+      <label for="black_pen">Black</label>
+      <input type="radio" id="rainbow_pen" name="pen_type" value="Rainbow">
+      <label for="rainbow_pen">Rainbow</label>
+    </div>
+    <button id="reset_button">Clear</button>
+  </div>
 </body>
 <script src="etch-a-sketch.js"></script>
 </html>
